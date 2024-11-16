@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Registration Form</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+      <!-- Name -->
+      <label for="name">Name <span>*</span></label>
+      <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your full name">
+
+      <!-- Email -->
+      <label for="email">Email <span>*</span></label>
+      <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+
+      <!-- Password -->
+      <label for="password">Password <span>*</span></label>
+      <input type="password" id="password" name="password" required aria-required="true" placeholder="Enter your password">
+
+      <!-- Address -->
+      <label for="address">Address</label>
+      <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth <span>*</span></label>
+      <input type="date" id="dob" name="dob" required aria-required="true">
+
+      <!-- Gender -->
+      <label>Gender <span>*</span></label>
+      <div>
+        <input type="radio" id="male" name="gender" value="Male" required aria-required="true">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+      </div>
+
+      <!-- Preferences (Optional) -->
+      <label for="preferences">Preferences</label>
+      <input type="text" id="preferences" name="preferences" placeholder="Enter your preferences">
+
+      <!-- Interests (Optional) -->
+      <label for="interests">Interests</label>
+      <input type="text" id="interests" name="interests" placeholder="Enter your interests">
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
