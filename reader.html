@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Reader</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Reader</h1>
+        <video id="video" autoplay></video>
+        <canvas id="canvas" hidden></canvas>
+        <p id="result">Scan a QR Code to see the result here.</p>
+        <button id="stopButton">Stop Camera</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
